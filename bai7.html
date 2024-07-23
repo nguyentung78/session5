@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .container {
+            background-color: rgb(212, 214, 215);
+            width: 100%;
+            overflow: hidden; /* Ẩn nội dung vượt ra ngoài vùng chứa */
+            white-space: nowrap; /* Đảm bảo nội dung không bị cắt bớt và xuống dòng */
+        }
+
+        .scrolling-text {
+            display: inline-block;
+            padding: 10px;
+            color:rgb(94, 174, 13);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            animation: scroll-left 10s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="scrolling-text">
+            Văn bản di chuyển từ phải sang trái mãi mãi!
+        </div>
+    </div>
+</body>
+</html>

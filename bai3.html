@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: #F0F8FF;
+            padding: 10px;
+
+        }
+        .vuong {
+            width: 150px;
+            height: 150px;
+            background-color: aqua;
+            transition: box-shadow 0.3s ease;
+
+        }
+        .vuong:hover {
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+        }
+        .cau {
+            width: 150px;
+            height: 150px;
+            background-color: #C9846E;
+            border-radius: 65px;
+            margin-left: 50px;
+            transition: transform 0.3s ease;
+        }
+        .cau:hover {
+            transform: scale(1.1);
+        }
+        .tron {
+            width: 150px;
+            height: 150px;
+            background-color: #FF6347;
+            border-radius: 100px;
+            margin-left: 100px;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .tron:hover {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <div class="vuong"></div>
+</div>
+<br>
+<div>
+    <div class="cau"></div>
+</div>
+<br>
+<div>
+    <div class="tron"></div>
+</div>
+</body>
+</html>
